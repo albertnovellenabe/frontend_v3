@@ -1,0 +1,37 @@
+/* FOOTER TOP */
+.footer-top {
+  @apply flex justify-center gap-10 sm:gap-24 md:gap-36;
+}
+
+.footer-top-about,
+.footer-top-followus,
+.footer-top-legal {
+  @apply flex flex-col gap-2;
+}
+
+.footer-top-about > .cnt > p,
+.footer-top-followus > .cnt > p,
+.footer-top-legal > .cnt > p {
+  @apply text-xs;
+}
+
+/* FOOTER MID */
+.footer-mid {
+  @apply flex justify-center flex-col gap-2;
+  span,
+  div {
+    @apply flex justify-center gap-10;
+  }
+  span {
+    @apply flex text-sm;
+  }
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+  @apply flex justify-center;
+}
+
+.footer-bottom > .cnt {
+  @apply text-xs;
+}

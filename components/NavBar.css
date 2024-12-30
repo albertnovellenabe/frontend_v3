@@ -1,0 +1,11 @@
+.navbar-flex-between {
+  @apply flex justify-between items-center;
+}
+
+.navbar-flex-center {
+  @apply flex justify-center items-center;
+}
+
+.navbar-menu-desktop {
+  @apply text-slate-500;
+}

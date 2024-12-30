@@ -1,0 +1,27 @@
+/* SECTION 1 */
+.page-section1-bg {
+}
+
+.page-section1 {
+  @apply py-10;
+}
+
+.page-section1-h {
+  @apply text-3xl font-bold text-primary-white lg:leading-[1.3] lg:text-7xl sm:leading-[1.3] sm:text-5xl;
+}
+
+.page-section1-p {
+  @apply text-sm lg:leading-[1.7] tracking-wide text-primary-white sm:text-base mx-5 lg:text-2xl;
+}
+
+.page-section1-getstarted-button {
+  @apply py-0.5 px-3 sm:py-1 sm:px-4 md:py-1.5 md:px-5 rounded-md;
+}
+
+.page-section1-getstarted-button-cnt {
+  @apply align-middle text-stone-950 text-xs sm:text-sm md:text-base;
+}
+
+/* SECTION 2 */
+
+/* SECTION 3 */

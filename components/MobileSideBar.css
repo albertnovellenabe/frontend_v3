@@ -1,0 +1,15 @@
+.navbar-sidebar-mobile {
+  @apply fixed z-40 h-screen w-80 overflow-y-auto bg-white p-4 dark:bg-gray-800;
+}
+
+.navbar-sidebar-mobile-head {
+  @apply flex gap-4 py-2 pl-2;
+}
+
+.navbar-menu-mobile {
+  @apply font-bold pl-4;
+}
+
+.navbar-menu-mobile-more {
+  @apply text-sm hover:bg-gray-200 rounded-r-lg mr-2;
+}
