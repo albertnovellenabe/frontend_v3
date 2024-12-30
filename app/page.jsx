@@ -11,7 +11,7 @@ const Home = () => {
           <div className="app-standard-view flex text-center">
             <h1 className="page-section1-h">
               Make your app the best it can be with Firebase and generative Ai
-              HELLO WORLD!
+              HELLO WORLD. 112
             </h1>
             <p className="page-section1-p pt-10">
               Build & run moden, AI-powered experiences users love with
