@@ -7,9 +7,14 @@
 }
 
 .navbar-menu-mobile {
-  @apply font-bold pl-4;
+  @apply font-bold pl-4 cursor-pointer text-sm font-semibold tracking-tight;
 }
 
 .navbar-menu-mobile-more {
-  @apply text-sm hover:bg-gray-200 rounded-r-lg mr-2;
+  @apply text-xs hover:bg-gray-200 rounded-r-lg cursor-pointer;
+}
+
+/* SERVICES OPTIONS */
+.navbar-menu-mobile-services-options {
+  @apply text-xs text-blue-400;
 }

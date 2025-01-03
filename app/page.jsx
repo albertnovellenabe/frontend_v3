@@ -1,3 +1,4 @@
+"use client";
 import "./page.css";
 
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -10,14 +11,10 @@ const Home = () => {
         <div className="page-section1">
           <div className="app-standard-view flex text-center">
             <h1 className="page-section1-h">
-              Make your app the best it can be with Firebase and generative Ai
-              HELLO WORLD. 112
+              Investing in the present and future with [Org name]
             </h1>
             <p className="page-section1-p pt-10">
-              Build & run moden, AI-powered experiences users love with
-              Firebase, a platform designed to support you throughout your app
-              development journey. Backed by Google and trusted by millions of
-              businesses around the world.
+              Investing in the now and the future
             </p>
           </div>
           <div className="app-standard-view flex text-center pt-5">
