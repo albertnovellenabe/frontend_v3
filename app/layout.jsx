@@ -1,5 +1,3 @@
-"use client";
-
 import "@styles/globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -16,7 +14,7 @@ export const metaData = {
 };
 
 /*
-  TODO: add <Provider>...</Provider>      <- Displays Error
+  TODO: add <Provider>...</Provider>      <- Setup Later
 */
 
 const RootLayout = ({ children }) => (
@@ -28,11 +26,7 @@ const RootLayout = ({ children }) => (
       />
     </head>
     <body>
-      <main>
-        <NavBar />
-        {children}
-        <Footer />
-      </main>
+      <main>{children}</main>
       <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     </body>
   </html>

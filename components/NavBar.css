@@ -9,3 +9,28 @@
 .navbar-menu-desktop {
   @apply text-slate-900;
 }
+
+/* Dropdown Menu With Hover */
+.navbar-menu-desktop-aboutus-container,
+.navbar-menu-desktop-services-container {
+  position: absolute;
+  margin-top: -200px; /* HIDE */
+  background-color: transparent;
+  transition: 0s ease-in-out;
+}
+
+.navbar-menu-desktop-aboutus-wrapper,
+.navbar-menu-desktop-services-wrapper {
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+ul li:hover .navbar-menu-desktop-aboutus-container,
+ul li:hover .navbar-menu-desktop-services-container {
+  opacity: 1;
+  margin-top: 0;
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
