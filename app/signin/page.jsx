@@ -4,10 +4,8 @@ import NavBar from "../../components/NavBar";
 const SignIn = () => {
   return (
     <>
-      <div className="w-screen flex flex-col">
-        <NavBar />
-      </div>
-      <div className="container mx-auto flex h-screen">
+      <NavBar />
+      <div className="mx-auto flex h-screen">
         {/* Left Pane */}
         <div className="w-1/3 bg-gray-100 flex flex-col justify-center items-center p-10">
           <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
@@ -26,15 +24,15 @@ const SignIn = () => {
                   type="email"
                   name="email"
                   id="email"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                   placeholder="name@company.com"
                   required
                 />
               </div>
               <div>
                 <label
-                  for="password"
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  htmlFor="password"
+                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
                   Your password
                 </label>
@@ -43,7 +41,7 @@ const SignIn = () => {
                   name="password"
                   id="password"
                   placeholder="••••••••"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                   required
                 />
               </div>
@@ -54,12 +52,12 @@ const SignIn = () => {
                       id="remember"
                       type="checkbox"
                       value=""
-                      class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                      className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
                       required
                     />
                   </div>
                   <label
-                    for="remember"
+                    htmlFor="remember"
                     className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                   >
                     Remember me
@@ -82,7 +80,7 @@ const SignIn = () => {
                 Not registered?{" "}
                 <a
                   href="#"
-                  class="text-blue-700 hover:underline dark:text-blue-500"
+                  className="text-blue-700 hover:underline dark:text-blue-500"
                 >
                   Create account
                 </a>
