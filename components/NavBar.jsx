@@ -1,21 +1,24 @@
 "use client";
 
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
-import "./NavBar.css";
-import Link from "next/link";
 import Image from "@node_modules/next/image";
-import MobileSideBar from "./MobileSideBar";
+import { Drawer } from "flowbite";
+import Link from "next/link";
+import { useRouter } from "next/navigation"; // Import useRouter
 import { useEffect, useState } from "react";
-import { signIn, signOut, useSession, getProviders } from "next-auth/react";
-import { Drawer, Dropdown } from "flowbite";
-import { useRouter } from "@node_modules/next/navigation";
+import MobileSideBar from "./MobileSideBar";
+import "./NavBar.css";
 
 const NavBar = () => {
   const isUserLoggedIn = true;
   const router = useRouter();
   const [isLoaded, setIsLoaded] = useState(false);
+
+  const handleSignIn = () => {
+    router.push("/signin");
+  };
 
   useEffect(() => {
     setIsLoaded(true);
@@ -120,8 +123,11 @@ const NavBar = () => {
           {isUserLoggedIn ? (
             <div className="flex gap-3 md:gap-5 px-2">
               <button
-                onClick={() => router.push("/account/login")}
                 type="button"
+                onClick={() => {
+                  handleSignIn();
+                  console.log("Button Pressed");
+                }}
                 className="navbar-button rounded py-1 px-2 hover:bg-blue-100 transition delay-20 text-blue-500 focus:ring-2 focus:ring-blue-200"
               >
                 Sign In
@@ -139,6 +145,7 @@ const NavBar = () => {
               <button
                 type="button"
                 onClick={() => {
+                  handleSignIn();
                   console.log("Button Pressed");
                 }}
                 className="navbar-button rounded py-1 px-2 hover:bg-blue-100 transition delay-20 text-blue-500 focus:ring-2 focus:ring-blue-200"
